@@ -1,0 +1,194 @@
+/*----------------->> Active Widget Grid Layout - 4 Columns <<-------------------*/
+.grid-stack > .grid-stack-item[data-gs-width='1'] {
+  width: 25%;
+}
+.grid-stack > .grid-stack-item[data-gs-x='1'] {
+  left: 25%;
+}
+.grid-stack > .grid-stack-item[data-gs-min-width='1'] {
+  min-width: 25%;
+}
+.grid-stack > .grid-stack-item[data-gs-max-width='1'] {
+  max-width: 25%;
+}
+.grid-stack > .grid-stack-item[data-gs-width='2'] {
+  width: 50%;
+}
+.grid-stack > .grid-stack-item[data-gs-x='2'] {
+  left: 50%;
+}
+.grid-stack > .grid-stack-item[data-gs-min-width='2'] {
+  min-width: 50%;
+}
+.grid-stack > .grid-stack-item[data-gs-max-width='2'] {
+  max-width: 50%;
+}
+.grid-stack > .grid-stack-item[data-gs-width='3'] {
+  width: 75%;
+}
+.grid-stack > .grid-stack-item[data-gs-x='3'] {
+  left: 75%;
+}
+.grid-stack > .grid-stack-item[data-gs-min-width='3'] {
+  min-width: 75%;
+}
+.grid-stack > .grid-stack-item[data-gs-max-width='3'] {
+  max-width: 75%;
+}
+.grid-stack > .grid-stack-item[data-gs-width='4'] {
+  width: 100%;
+}
+.grid-stack > .grid-stack-item[data-gs-x='4'] {
+  left: 100%;
+}
+.grid-stack > .grid-stack-item[data-gs-min-width='4'] {
+  min-width: 100%;
+}
+.grid-stack > .grid-stack-item[data-gs-max-width='4'] {
+  max-width: 100%;
+}
+/*----------------->> In-active Widget Grid Layout - 2 Columns <<-------------------*/
+.grid-stack-inactive .grid-stack-item[data-gs-width='1'] {
+  width: 50%;
+}
+.grid-stack-inactive .grid-stack-item[data-gs-x='1'] {
+  left: 50%;
+}
+.grid-stack-inactive .grid-stack-item[data-gs-min-width='1'] {
+  min-width: 50%;
+}
+.grid-stack-inactive .grid-stack-item[data-gs-max-width='1'] {
+  max-width: 50%;
+}
+.grid-stack-inactive .grid-stack-item[data-gs-width='2'] {
+  width: 100%;
+}
+.grid-stack-inactive .grid-stack-item[data-gs-x='2'] {
+  left: 100%;
+}
+.grid-stack-inactive .grid-stack-item[data-gs-min-width='2'] {
+  min-width: 100%;
+}
+.grid-stack-inactive .grid-stack-item[data-gs-max-width='2'] {
+  max-width: 100%;
+}
+
+#dashboard {
+	position:relative; /* needed for footer positioning*/
+ 	margin:0 auto; /* center */
+ 	width:100%;
+	margin:0 auto;
+	height:auto !important; /* real browsers */
+	height:100%; /* IE6: treaded as min-height*/
+	min-height:100%; /* real browsers */
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-family: 'Segoe UI', Tahoma, Arial, Helvetica, Sans-Serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight:400;
+    color:#454545;
+	-webkit-font-smoothing: antialiased;
+}
+    	
+.grid-stack {
+    height:100%;
+    margin-top:10px;
+}
+       
+.grid-stack-item-content {
+	margin: 0px 0px 4px 0px;
+	text-align: left;
+	border-collapse:collapse;
+	border-radius: 5px 5px 0px 0px;
+	background: #FFFFFF;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+        
+.portlet-header {
+	line-height: 26px;	
+	font-weight: bold;
+	color: #FFFFFF;
+	-moz-user-select: none;
+    white-space: nowrap;
+    display: inline-block;
+    width: 100%;	
+    margin-top: -3px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.content {
+	height: 100%;
+	overflow-x:hidden;
+	overflow-y:auto;
+	padding: 15px;
+} 
+			
+.portlet-header .header {
+	padding-left: 3px;
+}		
+
+.active-widgets {
+	width:75%;
+	float:left;
+}
+.inactive-widgets {
+	width:25%;
+	margin-left:75%;  
+	height: 100%;
+}
+
+.header-title {
+	padding:10px 0px 10px 0px;
+ 	margin: 0px 15px;
+ 	height: 25px;
+}
+ 	
+.header-title h1 {
+	float:left;
+	font-size:24px;
+}
+
+.header-title span {
+	float: right;
+}
+
+.grid-stack-item {
+	margin-top: 15px;
+}
+
+.grid-stack-active {
+	border-right: dashed 1px #888888;
+	border-top : dashed 1px #888888;
+	padding-bottom: 30px;
+	min-height: 600px;
+}
+     
+.grid-stack-inactive {
+	border-top : dashed 1px #888888;
+	background-color:#E2E2E2;
+	padding-bottom: 30px;
+	min-height: 600px;
+}
+
+.grid-stack-active .grid-stack-item-content { border: 1px solid #009933;}
+
+.grid-stack-inactive .grid-stack-item-content { border: 1px dashed #FF0000; border-top: 0; }
+
+.grid-stack-active .portlet-header { 
+    background-color:#009933;
+}
+     
+.grid-stack-inactive .portlet-header {
+    background-color:#FF0000;
+}
+
+/*----------------->> Widget Icons <<-------------------*/        
+.na-icon {display: block;float:right;background-repeat: no-repeat;position:relative;top:4px;padding:2px; }
+.na-icon {width:16px;height:16px;}
+.na-icon-gear {background-image: url(../images/icon-gear.png);}
+.na-icon-close {background-image: url(../images/icon-close.png);}
+.na-icon-triangle-1-s{background-image: url(../images/icon-maximize.png);}
