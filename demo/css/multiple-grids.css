@@ -92,54 +92,6 @@
     color:#454545;
 	-webkit-font-smoothing: antialiased;
 }
-    	
-.grid-stack {
-    height:100%;
-    margin-top:10px;
-}
-       
-.grid-stack-item-content {
-	margin: 0px 0px 4px 0px;
-	text-align: left;
-	border-collapse:collapse;
-	border-radius: 5px 5px 0px 0px;
-	background: #FFFFFF;
-	overflow-x:hidden;
-	overflow-y:hidden;
-}
-        
-.portlet-header {
-	line-height: 26px;	
-	font-weight: bold;
-	color: #FFFFFF;
-	-moz-user-select: none;
-    white-space: nowrap;
-    display: inline-block;
-    width: 100%;	
-    margin-top: -3px;
-    border-radius: 5px 5px 0px 0px;
-}
-
-.content {
-	height: 100%;
-	overflow-x:hidden;
-	overflow-y:auto;
-	padding: 15px;
-} 
-			
-.portlet-header .header {
-	padding-left: 3px;
-}		
-
-.active-widgets {
-	width:75%;
-	float:left;
-}
-.inactive-widgets {
-	width:25%;
-	margin-left:75%;  
-	height: 100%;
-}
 
 .header-title {
 	padding:10px 0px 10px 0px;
@@ -150,14 +102,27 @@
 .header-title h1 {
 	float:left;
 	font-size:24px;
+	color: #2c3e50;
 }
 
 .header-title span {
 	float: right;
 }
 
-.grid-stack-item {
-	margin-top: 15px;
+.active-widgets {
+	width:75%;
+	float:left;
+}
+
+.inactive-widgets {
+	width:25%;
+	margin-left:75%;  
+	height: 100%;
+}
+    	
+.grid-stack {
+    height:100%;
+    margin-top:10px;
 }
 
 .grid-stack-active {
@@ -174,16 +139,43 @@
 	min-height: 600px;
 }
 
-.grid-stack-active .grid-stack-item-content { border: 1px solid #009933;}
-
-.grid-stack-inactive .grid-stack-item-content { border: 1px dashed #FF0000; border-top: 0; }
-
-.grid-stack-active .portlet-header { 
-    background-color:#009933;
+.grid-stack-item {
+	margin-top: 15px;
 }
-     
-.grid-stack-inactive .portlet-header {
-    background-color:#FF0000;
+       
+.grid-stack-item-content {
+	margin: 0px 0px 4px 0px;
+	text-align: left;
+	border-collapse:collapse;
+	border-radius: 5px 5px 0px 0px;
+	background: #FFFFFF;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	border: 1px solid #3399FF;
+}
+        
+.portlet-header {
+	line-height: 26px;	
+	font-weight: bold;
+	color: #FFFFFF;
+	-moz-user-select: none;
+    white-space: nowrap;
+    display: inline-block;
+    width: 100%;	
+    margin-top: -3px;
+    border-radius: 5px 5px 0px 0px;
+	background: #3399FF;
+}
+
+.portlet-header .header {
+	padding-left: 3px;
+}		
+
+.content {
+	height: 100%;
+	overflow-x:hidden;
+	overflow-y:auto;
+	padding: 15px;
 }
 
 /*----------------->> Widget Icons <<-------------------*/        
