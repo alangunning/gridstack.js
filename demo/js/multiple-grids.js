@@ -5,6 +5,7 @@ var dashboardFn = {
             		width: 4,
             		height: 6,
 	            	cell_height:100,
+					always_show_resize_handle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
             		grid_class: 'grid-stack-active',
             		draggable: {
             			cursor: 'move',
